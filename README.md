@@ -1,2 +1,2 @@
-# Scientific-Calculator
-A Simple yet powerful calculator app made using HTML/CSS/JS
+# Scientific Calculator
+ Scientific Calculator coded in HTML5+CSS+JS
