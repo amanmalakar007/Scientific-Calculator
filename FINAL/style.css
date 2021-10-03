@@ -1,7 +1,7 @@
 .textview {
     transform: translateX(-11px) translateY(-11px);
     height: 71px;
-    width: 361px;
+    width: 98%;
     font-size: 35px;
     background-color: rgb(106, 194, 106);
     border-radius: 11px;
@@ -138,24 +138,27 @@
 }
 
 #front {
-    position: relative;
-    width: 401px;
-    height: 426px;
+    /* position: relative; */
+    width: 23rem;
+    height: 26rem;
     border-radius: 20px;
-    padding: 50px;
+    padding: 3rem;
     text-align: center;
     background-color: #000f21;
     border: 10px solid gray;
     box-shadow: 10px 10px 100px 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #back {
-    position: relative;
-    padding-top: 5x;
-    transform: translateX(60px) translateY(-409px);
+    /* position: relative; */
+    padding-top: 5px;
     display: none;
-    width: 400px;
-    height: 325px;
+    width: 23rem;
+    height: 23rem;
     text-align: center;
     background-color: #000f21;
     transition-property: display;
@@ -164,12 +167,39 @@
 
 .main {
     text-align: center;
-    position: relative;
-    transform: translateX(700px) translateY(150px);
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.bg {
-    background-image: url('bg2.png');
-    width: 1920px;
-    height: 1080px;
+body{
+    background: url(./bg2.png);
+    margin: auto;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#aman{
+    width: fit-content;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    height: fit-content;
+}
+#main-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+@media only screen and (max-width:320px){
+    #front{
+        width: 20rem;
+    }
 }
